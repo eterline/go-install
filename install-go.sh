@@ -1,7 +1,7 @@
 #! /bin/sh
 
 GO_TAR_NAME=go1.23.5.linux-amd64.tar.gz
-GO_REPO_TAR="https://github.com/eterline/go-install/${GO_TAR_NAME}"
+GO_REPO_TAR="https://dl.google.com/go/${GO_TAR_NAME}"
 
 PATH_UPDATE_STR="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin"
 
