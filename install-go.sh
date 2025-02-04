@@ -12,7 +12,7 @@ echo extract go to: "/usr/local/"
 tar -xzf ${GO_TAR_NAME} -C /usr/local/
 
 printf "Rewrite go bin to PATH in: '/etc/environment' (y/n)? "
-read answer
+read -r -p answer
 
 if [ "$answer" != "${answer#[Yy]}" ] ;then 
     echo PATH=${PATH_UPDATE_STR} > /etc/environment
