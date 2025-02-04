@@ -11,14 +11,7 @@ curl -O ${GO_REPO_TAR}
 echo extract go to: "/usr/local/"
 tar -xzf ${GO_TAR_NAME} -C /usr/local/
 
-printf "Rewrite go bin to PATH in: '/etc/environment' (y/n)? "
-read -r -p answer
-
-if [ "$answer" != "${answer#[Yy]}" ] ;then 
-    echo PATH=${PATH_UPDATE_STR} > /etc/environment
-    echo env updated. reboot host
-else
-    echo bye
-fi
+echo env updated. reboot host
+echo PATH=${PATH_UPDATE_STR} > /etc/environment
 
 echo after reboot write 'go' for check
